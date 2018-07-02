@@ -21,22 +21,6 @@ module.exports.makeDictionary = function makeDictionary({data, byField}) {
   }, {});
 };
 
-module.exports.humanizeProductType = (type) => {
-  switch(type) {
-  case 'C':
-    return 'COMMERCIAL';
-  case 'P':
-    return 'PACKAGE';
-  case 'N': 
-    return 'RENTAL';
-  case 'K':
-    return 'KIT';
-  case 'S':
-    return 'SERVICE';
-  default:
-    return null;
-  }
-};
 
 function removeHourFromDate(timestamp){
   let timestampArray = timestamp.split(' ');
